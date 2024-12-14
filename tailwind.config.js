@@ -10,8 +10,8 @@ module.exports = {
         "orange" : "#F28D35",
         "text"   : "#2F2F2F",
         "green"  : "#4DCA79",
-        "blue"   : "#1CBDDD"
-      
+        "blue"   : "#1CBDDD",
+        "gradient": "linear-gradient(257deg, #1CBDDD 27.86%, #4DCA79 100%), #FFF",
       }
     },
   },
