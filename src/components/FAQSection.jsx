@@ -25,9 +25,9 @@ function FAQSection() {
         },
       ];
     return (
-        <div className="my-12">
+        <div className="md:my-12 mt-14 ">
             <div className="font-bold mb-8 text-primary text-center font-poppins text-[27px]">Frequently asked questions</div>
-            <div className="mx-24 ">
+            <div className="lg:mx-24  mx-5">
             <div className=" flex items-center justify-center">
 
 

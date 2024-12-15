@@ -1,15 +1,15 @@
 function QnAItem({ title, content, isOpen, onClick }) {
   return (
-    <div className=" w-[846px] bg-neutral-50 px-2 hover:bg-white rounded-lg">
+    <div className=" sm:w-[606px] lg:w-[846px] bg-neutral-50 px-2 hover:bg-white rounded-lg">
       <div
-        className={`flex font-inter text-[22px] font-medium ${
+        className={`flex font-inter sm:text-[22px] text-xl font-medium ${
           isOpen && "text-primary"
-        } justify-between items-center w-full  px-4 py-6 text-left font-medium `}
+        } justify-between items-center w-full  sm:px-4 sm:py-6 text-left font-medium `}
       >
         {title}
         <button onClick={onClick} className="  relative grid place-content-center  w-6 h-6">
           <svg
-            className={`absolute transition-opacity transform duration-300 mt-2 ease-in-out ${
+            className={`absolute transition-opacity transform duration-300 mt-2 sm:-mt-3 ease-in-out ${
               isOpen ? "opacity-0 scale-75" : "opacity-100 scale-100"
             }`}
             width="16"
@@ -39,7 +39,7 @@ function QnAItem({ title, content, isOpen, onClick }) {
           </svg>
 
           <svg
-            className={`absolute transition-opacity transform duration-300 mt-3 ease-in-out ${
+            className={`sm:-mt-2 absolute transition-opacity transform duration-300 mt-3 ease-in-out ${
               isOpen ? "opacity-100 scale-100" : "opacity-0 scale-75"
             }`}
             width="16"
@@ -64,7 +64,7 @@ function QnAItem({ title, content, isOpen, onClick }) {
         </button>
       </div>
      <div
-  className={`px-4 w-full py-2 text-textlight transition-all duration-300 ease-in-out transform ${
+  className={` w-full  py-2 text-textlight transition-all duration-300 ease-in-out transform ${
     isOpen ? "opacity-100 scale-y-100 max-h-[200px]" : "opacity-0 scale-y-0 max-h-0"
   }`}
   style={{
